@@ -1,0 +1,8 @@
+prefix=/home/chopin/carto_ws/test_ws/devel
+
+Name: test_code
+Description: Description of test_code
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

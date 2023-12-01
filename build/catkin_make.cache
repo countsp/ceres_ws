@@ -1,0 +1,2 @@
+test_code
+-DCATKIN_DEVEL_PREFIX=/home/chopin/carto_ws/test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chopin/carto_ws/test_ws/install -G Unix Makefiles

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chopin/carto_ws/test_ws/src/test_code/src/test_ceres3.cc
+ceres/ceres.h
+/home/chopin/carto_ws/test_ws/src/test_code/src/ceres/ceres.h
+glog/logging.h
+/home/chopin/carto_ws/test_ws/src/test_code/src/glog/logging.h
+

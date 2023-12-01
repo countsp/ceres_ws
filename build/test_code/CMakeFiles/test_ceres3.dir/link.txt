@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/test_ceres3.dir/src/test_ceres3.cc.o  -o /home/chopin/carto_ws/test_ws/devel/lib/test_code/test_ceres3  /usr/lib/libceres.so.1.14.0 -lglog -lglog /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2 -lpthread 
