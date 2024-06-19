@@ -18,7 +18,9 @@ problem.AddResidualBlock(cost_function, nullptr, &x);
 ```
 
 curve fitting
-```#include "ceres/ceres.h"
+```
+#include "ceres/ceres.h"
+#include "ceres/ceres.h"
 #include "glog/logging.h"
 // Data generated using the following octave code.
 //   randn('seed', 23497);
