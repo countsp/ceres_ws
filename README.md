@@ -69,7 +69,7 @@ struct LidarEdgeFactor
 		: curr_point(curr_point_), last_point_a(last_point_a_), last_point_b(last_point_b_), s(s_) {}
 
 	template <typename T>
-	bool operator()(const T *q, const T *t, T *residual) const
+	bool operator()(const T *q, const T *t, T *residual) const      // 先待优化的变量，后残差
 	{
 
 		Eigen::Matrix<T, 3, 1> cp{T(curr_point.x()), T(curr_point.y()), T(curr_point.z())};
