@@ -1,22 +1,12 @@
 ## 结构
-
-```
-struct Factor
-{
-
-}
-
-static ceres::CostFunction *Create()
-{
-    return (new ceres::AutoDiffCostFunction<Factor,a,b,c>new Factor());
-
-}
-```
+1. 建立 functor，定义变量残差
+2. new 一个 functor 给 cost_function
+3. 加入problem
 
 ### example
 ```
 struct NumericDiffCostFunctor {
-  bool operator()(const double* const x, double* residual) const {
+  bool operator()(const double* const x, double* residual) const { // 变量，残差
     residual[0] = 10.0 - x[0];
     return true;
   }
