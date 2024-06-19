@@ -99,8 +99,8 @@ struct LidarEdgeFactor
 									   const Eigen::Vector3d last_point_b_, const double s_)
 	{
 		return (new ceres::AutoDiffCostFunction<
-				LidarEdgeFactor, 3, 4, 3>(
-			new LidarEdgeFactor(curr_point_, last_point_a_, last_point_b_, s_)));     //3：残差3维 4：q为4元数 3：vector3d
+				LidarEdgeFactor, 3, 4, 3>(          //3：残差3维 4：q为4元数 3：vector3d
+			new LidarEdgeFactor(curr_point_, last_point_a_, last_point_b_, s_)));     
 	}
 
 	Eigen::Vector3d curr_point, last_point_a, last_point_b;
